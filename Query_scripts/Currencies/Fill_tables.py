@@ -24,7 +24,7 @@ cursor.execute(('insert currencies(code)' +
 "('2021-07-30',2,86.81)," +
 "('2021-07-25',5,10.52)," +
 "('2021-07-26',5,10.52)," +
-"('2021-07-29',5,10.68)"))
+"('2021-07-29',5,10.68)"), multi=True)
 for n in cursor:
     print(n)
 cursor.close()
