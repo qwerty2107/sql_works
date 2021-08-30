@@ -4,10 +4,10 @@ example = mysql.connector.connect(user='root', password='password',
                               host='127.0.0.1',
                               database= database_name)
 cursor = example.cursor()
-cursor.execute(('create table currencies' +
-'(' +
-  'id int primary key auto_increment,' +
-  'code char(3)' +
+cursor.execute(('create table currencies'\
+'('\
+  'id int primary key auto_increment,'\
+  'code char(3)'\
 ')'))
 for n in cursor:
     print(n)

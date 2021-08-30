@@ -5,11 +5,11 @@ example = mysql.connector.connect(user='root', password='password',
                               database= database_name)
 cursor = example.cursor()
 cursor.execute((
-'(id int primary key auto_increment, ' +
-  'goods_id int, ' +
-  'foreign key(goods_id) references goods(id), ' +
-  'order_id int, ' +
-  'foreign key(order_id) references orders(id), ' +
+'(id int primary key auto_increment, '\
+  'goods_id int, '\
+  'foreign key(goods_id) references goods(id), '\
+  'order_id int, '\
+  'foreign key(order_id) references orders(id), '\
   'quantity int)'
 ))
 
