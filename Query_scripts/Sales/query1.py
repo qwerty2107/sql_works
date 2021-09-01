@@ -14,3 +14,5 @@ for n in cursor:
 cursor.close()
 example.commit()
 example.close()
+
+#changes
